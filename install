@@ -14,7 +14,7 @@ echo "Decompressing Rootfs...!!!"
 proot --link2symlink bsdtar -xpJf archlinux-arm64.tar.xz 2>/dev/null
 
 ### Make executable bin
-wget -O $PREFIX/bin/archlinux https://raw.githubusercontent.com/xiv3r/Archlinux-Termux/refs/heads/main/archlinux/archlinux
+wget -O $PREFIX/bin/archlinux https://raw.githubusercontent.com/xiv3r/Archlinux-Termux/refs/heads/main/arch/archlinux
 
 ### Fix shebang
 termux-fix-shebang $PREFIX/bin/archlinux
