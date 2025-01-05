@@ -1,0 +1,13 @@
+#!/bin/bash
+   
+echo "Installing BlackArch...!!!"
+   
+# Prepare Packages
+pacman-key --init
+pacman-key --populate
+pacman -Syu --noconfirm
+
+#Blackarch Packages
+wget https://blackarch.org/strap.sh
+chmod +x strap.sh
+bash strap.sh
