@@ -7,11 +7,12 @@ pkg install root-repo x11-repo axel bsdtar proot neofetch pulseaudio -y
 neofetch --ascii_distro Archlinux -L
 
 ### Download Tarball
-axel -a --search -o archlinux-arm64.tar.xz https://fl.us.mirror.archlinuxarm.org/os/ArchLinuxARM-aarch64-latest.tar.gz
+axel -a --search -o archlinux-arm64.tar.xz http://os.archlinuxarm.org/os/ArchLinuxARM-aarch64-latest.tar.gz
 
 ### Decompressed tarball
 echo "Decompressing Rootfs...!!!"
 proot --link2symlink bsdtar -xpJf archlinux-arm64.tar.xz 2>/dev/null
+mv archlinux*/* archlinux-arm64/
 
 ### Make executable bin
 wget -O $PREFIX/bin/archlinux https://raw.githubusercontent.com/xiv3r/Archlinux-Termux/refs/heads/main/arch/archlinux
