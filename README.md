@@ -1,15 +1,15 @@
-# Archlinux-Termux
-Archlinux in Termux
 
 # Auto install
 ```
-apt update && apt install wget -y && wget -qO- https://raw.githubusercontent.com/xiv3r/Archlinux-Termux/refs/heads/main/install | sh
+apt update && pkg install wget -y && wget -qO- https://raw.githubusercontent.com/xiv3r/Archlinux-Termux/refs/heads/main/install | sh && clear && archlinux
 ```
 
-# Install Blackarch
+# Login 
 ```
 archlinux
 ```
+
+# Install BlackArch
 ```
 wget -qO- https://raw.githubusercontent.com/xiv3r/Archlinux-Termux/refs/heads/main/arch/blackarch | sh
 ```
